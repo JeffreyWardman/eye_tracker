@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "mhutchie.git-graph",
+    "sonarsource.sonarlint-vscode",
+    "shd101wyy.markdown-preview-enhanced",
+    "tamasfe.even-better-toml"
+  ]
+}

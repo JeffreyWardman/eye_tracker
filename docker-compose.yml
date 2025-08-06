@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - .:/app
+    devices:
+      - /dev/video0:/dev/video0
+    command: python3 -m eye_tracker.main
