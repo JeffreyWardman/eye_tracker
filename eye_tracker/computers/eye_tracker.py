@@ -29,7 +29,8 @@ class Bounds(BaseModel):
         return Bounds(x_min=int(min(xs)), x_max=int(max(xs)), y_min=int(min(ys)), y_max=int(max(ys)))
 
 
-# Assuming facing the person
+# Landmarks collected from dlib's 68-point face landmark model. See the below link for a visualisation of the landmarks:
+# https://www.researchgate.net/figure/Shape-predictor-68-face-landmarks-A-flowchart-of-the-proposed-system-has-given-below-to_fig1_337569547
 LEFT_EYE_LANDMARKS = Landmarks(top=37, bottom=41, left=36, right=39)
 RIGHT_EYE_LANDMARKS = Landmarks(top=43, bottom=47, left=42, right=45)
 
