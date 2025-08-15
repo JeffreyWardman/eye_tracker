@@ -3,8 +3,11 @@ services:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
+    environment:
+      - DISPLAY=${DISPLAY}
     volumes:
       - .:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix
     devices:
       - /dev/video0:/dev/video0
     command: python3 -m eye_tracker.main

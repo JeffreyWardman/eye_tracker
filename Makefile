@@ -20,6 +20,11 @@ build: clean-build ## Build wheel file
 	@echo "🚀 Creating wheel file"
 	@uvx --from build pyproject-build --installer uv
 
+.PHONY: run
+run: ## Run the application
+	@echo "🚀 Running the application"
+	@uv run python -m eye_tracker.main
+
 .PHONY: clean-build
 clean-build: ## Clean build artifacts
 	@echo "🚀 Removing build artifacts"
